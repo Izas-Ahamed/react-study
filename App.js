@@ -16,7 +16,7 @@
 
 //throws warning =>  Each child in a list should have a unique "key" prop
 const element = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
+  React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "Hi from React"),
     React.createElement("h2", {}, "Hello from React"),
   ]),

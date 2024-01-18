@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = <h1 className="header">Hello From JSX 🚀</h1>;
-
-console.log(heading); // prints object
+const Title = () => <h1 className="header">Hello From Title Component 🚀</h1>;
+//component composition
+const Header = () => (
+  <div id="container">
+    <Title />
+    <h1>Hi from header component</h1>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(root);
-root.render(heading);
+root.render(<Header />);

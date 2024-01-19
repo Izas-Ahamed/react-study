@@ -1,36 +1,61 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const Title = () => <h1 className="header">Hello From Title Component 🚀</h1>;
+const Header = () => {
+  return (
+    <div className="header">
+      <nav className="navbar">
+        <div className="logo-container">
+          <img
+            alt="logo"
+            src="https://w7.pngwing.com/pngs/894/279/png-transparent-online-food-ordering-food-delivery-grubhub-others-food-service-logo-thumbnail.png"
+          ></img>
+        </div>
+        <ul className="nav-items">
+          <li className="nav-item">Home</li>
+          <li className="nav-item">About Us</li>
+          <li className="nav-item">Cart</li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
 
-const SpanElement = () => <span>Im span component</span>;
+const RestaurantCard = () => {
+  return (
+    <div className="res-card">
+      <img
+        alt="card-img"
+        src="https://img.freepik.com/free-photo/side-view-shawarma-with-fried-potatoes-board-cookware_176474-3215.jpg?w=740&t=st=1705642988~exp=1705643588~hmac=cd95fee56e8e35025baa6263f77d0ee02009d1c68024cd81373cc3ff393c2884"
+      ></img>
+      <h3>Royal Foods</h3>
+      <h4>Shawarma, Arabian</h4>
+      <h4>4.4 stars</h4>
+    </div>
+  );
+};
 
-//react element
-const element = (
-  <div>
-    <h1>This is react element </h1>
-    <SpanElement />
-  </div>
-);
-const number = 100;
+const Main = () => {
+  return (
+    <div className="res-container">
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+    </div>
+  );
+};
 
-const Header = () => (
-  <div id="container">
-    {/* all are same */}
-    {Title()}
-    <Title />
-    <Title></Title>
-
-    {/* rendering element */}
-    {element}
-
-    <h1>Hi from header component</h1>
-
-    {/* Javascript code inside JSX */}
-    {console.log("thunderx")}
-    {number + 1}
-  </div>
-);
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <div>Search</div>
+      <Main />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+root.render(<AppLayout />);

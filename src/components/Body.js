@@ -1,6 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
-
+import Shimmer from "./Shimmer";
 const Body = () => {
   const [data, setData] = useState([]);
 
@@ -16,7 +16,9 @@ const Body = () => {
     setData(json.data.cards.slice(2));
   };
 
-  if (data.length == 0) return <h1>Loading....</h1>;
+  if (data.length == 0) {
+    return <Shimmer />;
+  }
   return (
     <div className="body">
       <div className="filter">

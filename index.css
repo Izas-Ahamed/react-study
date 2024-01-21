@@ -43,3 +43,7 @@
   border: solid 1px black;
   cursor: pointer;
 }
+
+.filter-btn {
+  margin: 10px;
+}

@@ -1,17 +1,29 @@
 import RestaurantCard from "./RestaurantCard";
-import mockData from "../utils/mockData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Body = () => {
-  const [data, setData] = useState(mockData);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0826802&lng=80.2707184&collection=83647&tags=&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
+    );
+    const json = await data.json();
+    setData(json.data.cards.slice(2));
+  };
+
   return (
-    <div class="body">
-      <div class="filter">
+    <div className="body">
+      <div className="filter">
         <button
-          class="filter-btn"
+          className="filter-btn"
           onClick={() => {
             let filteredData = data.filter(
-              (restaurant) => restaurant.info.avgRating > 4.4
+              (restaurant) => restaurant.card.card.info.avgRating > 4.4
             );
             setData(filteredData);
           }}
@@ -21,7 +33,10 @@ const Body = () => {
       </div>
       <div className="res-container">
         {data.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          <RestaurantCard
+            key={restaurant.card.card.info.id}
+            resData={restaurant.card.card}
+          />
         ))}
       </div>
     </div>

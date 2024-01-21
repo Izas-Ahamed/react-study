@@ -16,6 +16,7 @@ const Body = () => {
     setData(json.data.cards.slice(2));
   };
 
+  if (data.length == 0) return <h1>Loading....</h1>;
   return (
     <div className="body">
       <div className="filter">
@@ -23,7 +24,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             let filteredData = data.filter(
-              (restaurant) => restaurant.card.card.info.avgRating > 4.4
+              (restaurant) => restaurant?.card?.card?.info?.avgRating > 4.4
             );
             setData(filteredData);
           }}

@@ -43,6 +43,10 @@
   border: solid 1px black;
   cursor: pointer;
 }
+.filter {
+  display: flex;
+  align-items: center;
+}
 
 .filter-btn {
   margin: 10px;

@@ -7,7 +7,7 @@ const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <div>Search</div>
+
       <Body />
     </div>
   );

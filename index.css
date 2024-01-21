@@ -25,9 +25,9 @@
 }
 
 .res-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .res-card {
   margin: 5px;

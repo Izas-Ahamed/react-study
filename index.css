@@ -32,7 +32,7 @@
 .res-card {
   margin: 5px;
   padding: 5px;
-  max-width: 13rem;
+  width: 13rem;
   background-color: #edeaec;
 }
 

@@ -17,6 +17,9 @@ export default class UserClass extends React.Component {
     const data = await fetch("https://api.github.com/users/izas-ahamed");
     const json = await data.json();
     this.setState({ userInfo: json });
+
+    //setInterval
+    this.timer = setInterval(() => console.log("Hello from SetInterval"), 1000);
   }
 
   componentDidUpdate() {
@@ -25,6 +28,9 @@ export default class UserClass extends React.Component {
 
   componentWillUnmount() {
     console.log(this.props.name + " Child componentWillUnmount called");
+    //this enables after unmounting the setInterval is cleared
+    //due to SPA it wont clear
+    clearInterval(this.timer);
   }
 
   render() {

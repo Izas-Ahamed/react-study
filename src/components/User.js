@@ -1,14 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const User = ({ name, location }) => {
-  const [count] = useState(0);
-  const [count2] = useState(1);
+const User = () => {
+  const [data, setData] = useState({
+    userInfo: {
+      name: "default",
+      location: "default",
+    },
+  });
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch("https://api.github.com/users/izas-ahamed");
+    const json = await data.json();
+    setData({ userInfo: json });
+  };
+  const { name, location, avatar_url } = data?.userInfo;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      console.log("Hello from SetInterval");
+    }, 1000);
+
+    //unmount phase
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className="user-card">
-      <h1>Count : {count}</h1>
-      <h1>Count2 : {count2}</h1>
+      <img src={avatar_url}></img>
       <h2>Name: {name}</h2>
-      <h3>Location: {location}</h3>
+      <h3>Location: {location || "default"}</h3>
       <h3>Contact : @thunderx</h3>
     </div>
   );

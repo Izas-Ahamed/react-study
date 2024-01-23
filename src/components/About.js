@@ -20,7 +20,7 @@ class About extends Component {
     return (
       <div>
         <h1>About</h1>
-        <UserClass name="First" location="In Outer Space" />
+        <User name="First" location="In Outer Space" />
       </div>
     );
   }

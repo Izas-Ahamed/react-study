@@ -7,7 +7,14 @@ export default class UserClass extends React.Component {
       count: 0,
     };
   }
+
+  componentDidMount() {
+    console.log("Child User Mounted");
+  }
+
   render() {
+    console.log("Child render called");
+
     const { name, location } = this.props;
     const { count } = this.state;
     return (

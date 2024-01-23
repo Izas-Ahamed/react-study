@@ -23,6 +23,10 @@ export default class UserClass extends React.Component {
     console.log(this.props.name + " Child componentDidUpdate called");
   }
 
+  componentWillUnmount() {
+    console.log(this.props.name + " Child componentWillUnmount called");
+  }
+
   render() {
     console.log(this.props.name + "Child render called");
 

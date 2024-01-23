@@ -4,32 +4,31 @@ export default class UserClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
+      userInfo: {
+        name: "default",
+        location: "default",
+      },
     };
-    console.log(this.props.name + "Child constructor called");
+    // console.log(this.props.name + "Child constructor called");
   }
 
-  componentDidMount() {
-    console.log(this.props.name + "Child  componentDidMounted");
+  async componentDidMount() {
+    // console.log(this.props.name + "Child  componentDidMounted");
+    const data = await fetch("https://api.github.com/users/izas-ahamed");
+    const json = await data.json();
+    this.setState({ userInfo: json });
   }
 
   render() {
-    console.log(this.props.name + "Child render called");
+    // console.log(this.props.name + "Child render called");
 
-    const { name, location } = this.props;
-    const { count } = this.state;
+    const { name, location, avatar_url } = this.state.userInfo;
+
     return (
       <div className="user-card">
-        <h1>Count : {count}</h1>
-        <button
-          onClick={() => {
-            this.setState({ count: this.state.count + 1 });
-          }}
-        >
-          Increase Count
-        </button>
+        <img src={avatar_url}></img>
         <h2>Name: {name}</h2>
-        <h3>Location: {location}</h3>
+        <h3>Location: {location || "default"}</h3>
         <h3>Contact : @thunderx</h3>
       </div>
     );

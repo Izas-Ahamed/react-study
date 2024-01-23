@@ -25,18 +25,17 @@ Order of Lifecycle :
 class About extends Component {
   constructor(props) {
     super(props);
-    console.log("Parent Constructor called");
+    // console.log("Parent Constructor called");
   }
   componentDidMount() {
-    console.log("Parent componentDidMounted called");
+    // console.log("Parent componentDidMounted called");
   }
   render() {
-    console.log("Parent Render Called");
+    // console.log("Parent Render Called");
     return (
       <div>
         <h1>About</h1>
         <UserClass name="First" location="In Outer Space" />
-        <UserClass name="Second" location="In Outer Space" />
       </div>
     );
   }

@@ -1,10 +1,12 @@
+import User from "./User";
 import UserClass from "./UserClass";
 
 const About = () => {
   return (
     <div>
       <h1>About</h1>
-      <UserClass name="Ijas" location="In Space" />
+      <User name="Ijas (Functional)" location="In Deep Space" />
+      <UserClass name="Ijas (Class)" location="In Outer Space" />
     </div>
   );
 };

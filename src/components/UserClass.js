@@ -9,18 +9,22 @@ export default class UserClass extends React.Component {
         location: "default",
       },
     };
-    // console.log(this.props.name + "Child constructor called");
+    console.log(this.props.name + "Child constructor called");
   }
 
   async componentDidMount() {
-    // console.log(this.props.name + "Child  componentDidMounted");
+    console.log(this.props.name + "Child  componentDidMounted");
     const data = await fetch("https://api.github.com/users/izas-ahamed");
     const json = await data.json();
     this.setState({ userInfo: json });
   }
 
+  componentDidUpdate() {
+    console.log(this.props.name + " Child componentDidUpdate called");
+  }
+
   render() {
-    // console.log(this.props.name + "Child render called");
+    console.log(this.props.name + "Child render called");
 
     const { name, location, avatar_url } = this.state.userInfo;
 

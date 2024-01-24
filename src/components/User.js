@@ -8,6 +8,8 @@ const User = () => {
     },
   });
 
+  const { name, location, avatar_url } = data?.userInfo;
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -17,7 +19,6 @@ const User = () => {
     const json = await data.json();
     setData({ userInfo: json });
   };
-  const { name, location, avatar_url } = data?.userInfo;
 
   useEffect(() => {
     const timer = setInterval(() => {

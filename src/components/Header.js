@@ -14,15 +14,27 @@ const Header = () => {
         </div>
         <ul className="nav-items">
           <li>Online Status:{internetStatus ? "🟢" : "⭕"}</li>
-          <Link to="/" className="nav-item">
-            Home
-          </Link>
-          <Link to="/about" className="nav-item">
-            About Us
-          </Link>
-          <Link to="/cart" className="nav-item">
-            Cart
-          </Link>
+          <li>
+            <Link to="/" className="nav-item">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="nav-item">
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/grocery" className="nav-item">
+              Grocery
+            </Link>
+          </li>
+          <li>
+            <Link to="/cart" className="nav-item">
+              Cart
+            </Link>
+          </li>
+
           <button
             onClick={() =>
               btnName == "Login" ? setBtnName("Logout") : setBtnName("Login")

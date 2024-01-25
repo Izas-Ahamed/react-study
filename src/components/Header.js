@@ -9,7 +9,7 @@ const Header = () => {
   const internetStatus = useInternetStatus();
 
   const { loggedInUser } = useContext(UserContext);
-  console.log(loggedInUser, "user");
+
   return (
     //media query
     <div className="bg-gray-400 lg:bg-pink-100 md:bg-blue-100 sm:bg-yellow-100">

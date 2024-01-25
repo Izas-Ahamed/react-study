@@ -1,8 +1,9 @@
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useInternetStatus from "../utils/useInternetStatus";
+import UserContext from "../utils/UserContext";
 const Body = () => {
   const [data, setData] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
@@ -10,6 +11,8 @@ const Body = () => {
   const internetStatus = useInternetStatus();
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   useEffect(() => {
     fetchData();
@@ -30,7 +33,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="flex flex-wrap m-2">
+      <div className="flex flex-wrap m-2 items-center">
         <div>
           <input
             className="p-1 border-2 border-solid 1px border-black rounded-lg"
@@ -63,6 +66,15 @@ const Body = () => {
         >
           Top Rated Restaurant
         </button>
+        <div>
+          <label>Username: </label>
+          <input
+            className="p-1 border-2 border-solid 1px border-black rounded-lg"
+            type="text"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
       </div>
       <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => (

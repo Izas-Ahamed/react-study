@@ -23,6 +23,7 @@ const Grocery = lazy(() => import("./src/components/Grocery"));
 
 const AppLayout = () => {
   const [userName, setUserName] = useState();
+
   useEffect(() => {
     //Assume that we are making API call
     const data = { userName: "ThunderX" };
@@ -30,11 +31,15 @@ const AppLayout = () => {
   }, []);
   return (
     //overrding default value
-    <UserContext.Provider value={{ loggedInUser: userName }}>
+    <UserContext.Provider
+      value={{
+        loggedInUser: userName,
+        setUserName,
+        hello: "hello",
+      }}
+    >
       <div className="app">
-        <UserContext.Provider value={{ loggedInUser: userName }}>
-          <Header />
-        </UserContext.Provider>
+        <Header />
         <Outlet />
       </div>
     </UserContext.Provider>

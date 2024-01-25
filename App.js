@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
@@ -7,6 +7,7 @@ import About from "./src/components/About";
 import Contact from "./src/components/Contact";
 import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
+import UserContext from "./src/utils/UserContext";
 
 // The IMPORT() function is a JavaScript function that allows you to dynamically load a module. This can be useful if you need to load
 // a module that is not available at compile time, or if you need to load a module that is different depending on the environment in
@@ -21,11 +22,20 @@ import RestaurantMenu from "./src/components/RestaurantMenu";
 const Grocery = lazy(() => import("./src/components/Grocery"));
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+  useEffect(() => {
+    //Assume that we are making API call
+    const data = { userName: "ThunderX" };
+    setUserName(data.userName);
+  }, []);
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+    //overrdinf default value
+    <UserContext.Provider value={{ loggedInUser: userName }}>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 

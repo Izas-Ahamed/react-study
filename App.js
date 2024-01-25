@@ -29,10 +29,12 @@ const AppLayout = () => {
     setUserName(data.userName);
   }, []);
   return (
-    //overrdinf default value
+    //overrding default value
     <UserContext.Provider value={{ loggedInUser: userName }}>
       <div className="app">
-        <Header />
+        <UserContext.Provider value={{ loggedInUser: userName }}>
+          <Header />
+        </UserContext.Provider>
         <Outlet />
       </div>
     </UserContext.Provider>

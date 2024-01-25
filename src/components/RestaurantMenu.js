@@ -1,4 +1,5 @@
 import useRestaurantMenu from "../utils/useRestaurantMenu";
+import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router";
 
@@ -15,28 +16,26 @@ const RestaurantMenu = () => {
     resMenuData?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
       ?.card?.card;
 
+  const categories =
+    resMenuData?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (category) => "itemCards" in category?.card?.card
+    );
+  console.log(categories);
   return (
-    <div className="res-menu">
-      <h1>{name}</h1>
-      <h2>
+    <div className="text-center ">
+      <h1 className="font-bold mt-3 text-2xl">{name}</h1>
+      <h2 className="font-bold mb-3">
         {city}, {areaName}
       </h2>
-      <p>
+      <p className="font-medium">
         {cuisines.join(", ")} - {costForTwoMessage}
       </p>
-      <ul>
-        {itemCards ? (
-          itemCards.map((item) => (
-            <li key={item?.card?.info?.id}>
-              {item?.card?.info?.name}- RS.
-              {item?.card?.info?.price / 100 ||
-                item?.card?.info?.defaultPrice / 100}
-            </li>
-          ))
-        ) : (
-          <h1>NO MENU DATA</h1>
-        )}
-      </ul>
+      {categories.map((category) => (
+        <RestaurantCategory
+          key={category?.card?.card?.title}
+          data={category?.card?.card}
+        />
+      ))}
     </div>
   );
 };

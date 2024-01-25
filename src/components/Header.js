@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useInternetStatus from "../utils/useInternetStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   const internetStatus = useInternetStatus();
+
+  const { loggedInUser } = useContext(UserContext);
+
   return (
     //media query
     <div className="bg-gray-400 lg:bg-pink-100 md:bg-blue-100 sm:bg-yellow-100">
@@ -35,14 +39,16 @@ const Header = () => {
               Cart
             </Link>
           </li>
-
-          <button
-            onClick={() =>
-              btnName == "Login" ? setBtnName("Logout") : setBtnName("Login")
-            }
-          >
-            {btnName}
-          </button>
+          <li className="px-2">
+            <button
+              onClick={() =>
+                btnName == "Login" ? setBtnName("Logout") : setBtnName("Login")
+              }
+            >
+              {btnName}
+            </button>
+          </li>
+          <li className="font-bold px-2">{loggedInUser}</li>
         </ul>
       </nav>
     </div>

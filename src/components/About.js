@@ -1,6 +1,6 @@
 import { Component } from "react";
 import User from "./User";
-import UserClass from "./UserClass";
+import UserContext from "../utils/UserContext";
 /*
 Life cycle diagram: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
                     1. Render Phase
@@ -19,7 +19,11 @@ class About extends Component {
     // console.log("Parent Render Called");
     return (
       <div>
-        <h1>About</h1>
+        <UserContext.Consumer>
+          {({ loggedInUser }) => (
+            <h1 className="font-bold text-lg">{loggedInUser}</h1>
+          )}
+        </UserContext.Consumer>
         <User name="First" location="In Outer Space" />
       </div>
     );

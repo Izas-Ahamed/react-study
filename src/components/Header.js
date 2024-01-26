@@ -3,12 +3,15 @@ import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useInternetStatus from "../utils/useInternetStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   const internetStatus = useInternetStatus();
 
   const { loggedInUser } = useContext(UserContext);
+
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     //media query
@@ -36,7 +39,7 @@ const Header = () => {
           </li>
           <li className="px-2">
             <Link to="/cart" className="nav-item">
-              Cart
+              Cart <span className="font-bold">({cartItems.length})</span>
             </Link>
           </li>
           <li className="px-2">

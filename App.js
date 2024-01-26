@@ -10,6 +10,7 @@ import RestaurantMenu from "./src/components/RestaurantMenu";
 import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
+import Cart from "./src/components/Cart";
 
 // The IMPORT() function is a JavaScript function that allows you to dynamically load a module. This can be useful if you need to load
 // a module that is not available at compile time, or if you need to load a module that is different depending on the environment in
@@ -77,6 +78,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,

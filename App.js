@@ -8,6 +8,8 @@ import Contact from "./src/components/Contact";
 import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 import UserContext from "./src/utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./src/utils/appStore";
 
 // The IMPORT() function is a JavaScript function that allows you to dynamically load a module. This can be useful if you need to load
 // a module that is not available at compile time, or if you need to load a module that is different depending on the environment in
@@ -30,19 +32,20 @@ const AppLayout = () => {
     setUserName(data.userName);
   }, []);
   return (
-    //overrding default value
-    <UserContext.Provider
-      value={{
-        loggedInUser: userName,
-        setUserName,
-        hello: "hello",
-      }}
-    >
-      <div className="app">
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider
+        value={{
+          loggedInUser: userName,
+          setUserName,
+          hello: "hello",
+        }}
+      >
+        <div className="app">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 

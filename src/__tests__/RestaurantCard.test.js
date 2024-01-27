@@ -2,10 +2,7 @@ import { render, screen } from "@testing-library/react";
 import RestaurantCard, {
   withPromotedLabel,
 } from "../components/RestaurantCard";
-import {
-  RES_MOCK_DATA,
-  RES_PROMOTED_MOCK_DATA,
-} from "../mocks/resCardMockData";
+import RES_MOCK_DATA from "../mocks/resCardMockData.json";
 import "@testing-library/jest-dom";
 
 it("should render RestaurantCard component with props data", () => {

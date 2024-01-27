@@ -19,3 +19,12 @@ test("Should load button inside component", () => {
   //Assertion
   expect(button).toBeInTheDocument();
 });
+
+test("Should load input tag with Placeholder as UserName inside component", () => {
+  render(<Contact />);
+
+  const userName = screen.getByPlaceholderText("UserName");
+
+  //Assertion
+  expect(userName).toBeInTheDocument();
+});

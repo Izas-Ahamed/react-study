@@ -11,7 +11,7 @@ test("Should load contact us component", () => {
   expect(heading).toBeInTheDocument();
 });
 
-test("Should load button inside component", () => {
+test("Should load button inside contact component", () => {
   render(<Contact />);
 
   const button = screen.getByText("Submit");
@@ -20,11 +20,22 @@ test("Should load button inside component", () => {
   expect(button).toBeInTheDocument();
 });
 
-test("Should load input tag with Placeholder as UserName inside component", () => {
+test("Should load input tag with Placeholder as UserName inside contact component", () => {
   render(<Contact />);
 
   const userName = screen.getByPlaceholderText("UserName");
 
   //Assertion
   expect(userName).toBeInTheDocument();
+});
+
+test("Should load 2 input tags inside contact component", () => {
+  render(<Contact />);
+  //input -textbox
+  const inputBoxes = screen.getAllByRole("textbox");
+
+  //console.log(inputBoxes);
+
+  //Assertion
+  expect(inputBoxes.length).toBe(2);
 });

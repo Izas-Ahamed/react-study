@@ -4,7 +4,7 @@ import "@testing-library/jest-dom";
 
 //grouping test by describe
 describe("Contact us pages tests", () => {
-  test("Should load contact us component", () => {
+  it("Should load contact us component", () => {
     render(<Contact />);
 
     const heading = screen.getByRole("heading");
@@ -13,7 +13,7 @@ describe("Contact us pages tests", () => {
     expect(heading).toBeInTheDocument();
   });
 
-  test("Should load button inside contact component", () => {
+  it("Should load button inside contact component", () => {
     render(<Contact />);
 
     const button = screen.getByText("Submit");
@@ -22,7 +22,7 @@ describe("Contact us pages tests", () => {
     expect(button).toBeInTheDocument();
   });
 
-  test("Should load input tag with Placeholder as UserName inside contact component", () => {
+  it("Should load input tag with Placeholder as UserName inside contact component", () => {
     render(<Contact />);
 
     const userName = screen.getByPlaceholderText("UserName");
@@ -31,7 +31,7 @@ describe("Contact us pages tests", () => {
     expect(userName).toBeInTheDocument();
   });
 
-  test("Should load 2 input tags inside contact component", () => {
+  it("Should load 2 input tags inside contact component", () => {
     render(<Contact />);
     //input -textbox
     const inputBoxes = screen.getAllByRole("textbox");

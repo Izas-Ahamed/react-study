@@ -1,0 +1,1194 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "pageOffset": {
+      "nextOffset": "CP3//////////wEQBCABKICgxKOXmaS3NTgE",
+      "widgetOffset": {
+        "collectionV5FilterAndSortWidget": "",
+        "collectionV5RestaurantListWidget": "14",
+        "collectionV5MastheadWidget": ""
+      }
+    },
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+            "collectionId": "83647",
+            "title": "Chinese",
+            "description": "Transport your taste buds to the heart of Chinese cuisine with these scrumptious dishes.",
+            "imageId": "v1674029939/PC_Creative%20refresh/3D_bau/collections_new/Chinese.png",
+            "aspectRatio": "3.44",
+            "cta": {
+              "link": "swiggy://collectionV2?collection_id=83647&tags=layout_CCS_Chinese,chinese,layout_Chinese,ads_pc_chinese",
+              "type": "collectionv2"
+            },
+            "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+            "count": "155 restaurants"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.FilterSortWidget",
+            "sortConfigs": [
+              {
+                "key": "relevance",
+                "title": "Relevance (Default)",
+                "selected": true,
+                "defaultSelection": true
+              },
+              {
+                "key": "deliveryTimeAsc",
+                "title": "Delivery Time"
+              },
+              {
+                "key": "modelBasedRatingDesc",
+                "title": "Rating"
+              },
+              {
+                "key": "costForTwoAsc",
+                "title": "Cost: Low to High"
+              },
+              {
+                "key": "costForTwoDesc",
+                "title": "Cost: High to Low"
+              }
+            ],
+            "restaurantCount": 155,
+            "facetList": [
+              {
+                "label": "Veg/Non-veg",
+                "id": "isVeg",
+                "selection": "SELECT_TYPE_SINGLESELECT",
+                "facetInfo": [
+                  {
+                    "label": "Pure veg",
+                    "id": "isVegfacetquery4",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Non Veg",
+                    "id": "isVegfacetquery5",
+                    "analytics": {}
+                  }
+                ],
+                "subLabel": "Filter by"
+              },
+              {
+                "label": "Delivery Time",
+                "id": "deliveryTime",
+                "selection": "SELECT_TYPE_SINGLESELECT",
+                "facetInfo": [
+                  {
+                    "label": "Less than 30 mins",
+                    "id": "deliveryTimefacetquery4",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Less than 45 mins",
+                    "id": "deliveryTimefacetquery5",
+                    "analytics": {}
+                  }
+                ],
+                "subLabel": "Filter by"
+              },
+              {
+                "label": "Cost for two",
+                "id": "costForTwo",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Rs. 300-Rs. 600",
+                    "id": "costForTwofacetquery6",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Greater than Rs. 600",
+                    "id": "costForTwofacetquery7",
+                    "analytics": {}
+                  },
+                  {
+                    "label": "Less than Rs. 300",
+                    "id": "costForTwofacetquery8",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "subLabel": "Filter by"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "17150",
+              "name": "Southern Chinese Restaurant - Since 1969",
+              "cloudinaryImageId": "kwbuuvuudvdu7wcev5fm",
+              "locality": "Anna Nagar East",
+              "areaName": "Annanagar East",
+              "costForTwo": "₹400 for two",
+              "cuisines": ["Chinese"],
+              "avgRating": 4.1,
+              "parentId": "471688",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "10K+",
+              "promoted": true,
+              "adTrackingId": "cid=10867707~p=2~eid=0000018d-4bfd-29f6-60e3-78e400c80201~srvts=1706376899062~83647",
+              "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 6.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "29 mins",
+                "lastMileTravelString": "6.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-28 01:00:00",
+                "opened": true
+              },
+              "badges": {
+                "textExtendedBadges": [
+                  {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "options available",
+                    "fontColor": "#7E808C"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {},
+                  "textExtendedBadges": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "fontColor": "#7E808C",
+                          "iconId": "guiltfree/GF_Logo_android_3x",
+                          "description": "",
+                          "shortDescription": "options available"
+                        }
+                      }
+                    ]
+                  },
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=17150&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "47458",
+              "name": "Hotel Safari",
+              "cloudinaryImageId": "wsluwzkn2kk4qhv5vbp6",
+              "locality": "Royapettah",
+              "areaName": "Gopalapuram",
+              "costForTwo": "₹450 for two",
+              "cuisines": [
+                "North Indian",
+                "South Indian",
+                "Chinese",
+                "Biryani"
+              ],
+              "avgRating": 4.4,
+              "parentId": "7134",
+              "avgRatingString": "4.4",
+              "totalRatingsString": "10K+",
+              "promoted": true,
+              "adTrackingId": "cid=10890084~p=3~eid=0000018d-4bfd-29f6-60e3-78e500c8036b~srvts=1706376899062~83647",
+              "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 4.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "4.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:30:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "aggregatedDiscountInfoV2": {},
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=47458&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "656474",
+              "name": "Wow! Momo",
+              "cloudinaryImageId": "5a148e63e9c54942e37627da1aa156be",
+              "locality": "Jawahar Nagar",
+              "areaName": "Chennai Corp",
+              "costForTwo": "₹300 for two",
+              "cuisines": [
+                "Tibetan",
+                "Healthy Food",
+                "Asian",
+                "Chinese",
+                "Snacks",
+                "Continental",
+                "Desserts",
+                "Beverages"
+              ],
+              "avgRating": 4.3,
+              "parentId": "1776",
+              "avgRatingString": "4.3",
+              "totalRatingsString": "1K+",
+              "promoted": true,
+              "adTrackingId": "cid=10791402~p=4~eid=0000018d-4bfd-29f6-60e3-78e600c80459~srvts=1706376899062~83647",
+              "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 6.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "29 mins",
+                "lastMileTravelString": "6.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:59:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹99"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=656474&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "481878",
+              "name": "Hungry Panda",
+              "cloudinaryImageId": "drmlyidarakyxs00vkki",
+              "locality": "Lake Area",
+              "areaName": "Nungambakkam",
+              "costForTwo": "₹250 for two",
+              "cuisines": ["Indian", "Chinese"],
+              "avgRating": 4,
+              "parentId": "1596",
+              "avgRatingString": "4.0",
+              "totalRatingsString": "1K+",
+              "promoted": true,
+              "adTrackingId": "cid=10868365~p=5~eid=0000018d-4bfd-29f6-60e3-78e700c80500~srvts=1706376899062~83647",
+              "sla": {
+                "deliveryTime": 43,
+                "lastMileTravel": 5.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "43 mins",
+                "lastMileTravelString": "5.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-28 04:00:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {},
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=481878&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "77641",
+              "name": "A1 Ambur Biriyani",
+              "cloudinaryImageId": "vciivwzggkt7tmemz6a6",
+              "locality": "Chennai",
+              "areaName": "Balavinayagar Nagar",
+              "costForTwo": "₹100 for two",
+              "cuisines": ["Biryani", "Chinese"],
+              "avgRating": 4.1,
+              "parentId": "431508",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "1K+",
+              "promoted": true,
+              "adTrackingId": "cid=10800561~p=6~eid=0000018d-4bfd-29f6-60e3-78e800c80659~srvts=1706376899062~83647",
+              "sla": {
+                "deliveryTime": 31,
+                "lastMileTravel": 7.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "31 mins",
+                "lastMileTravelString": "7.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-28 01:00:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textExtendedBadges": {},
+                  "textBased": {},
+                  "imageBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "15% OFF",
+                "subHeader": "UPTO ₹45"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=77641&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "76702",
+              "name": "The Red Box",
+              "cloudinaryImageId": "aydhv8rxmxpmqfg1cjrd",
+              "locality": "Wellington Estate",
+              "areaName": "Egmore",
+              "costForTwo": "₹400 for two",
+              "cuisines": ["Chinese"],
+              "avgRating": 4.2,
+              "parentId": "1636",
+              "avgRatingString": "4.2",
+              "totalRatingsString": "10K+",
+              "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-28 01:30:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO ₹80"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=76702&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "101631",
+              "name": "Zam Zam Fast Food",
+              "cloudinaryImageId": "jk1nao7hohp8lreel9vh",
+              "locality": "Narayanan street",
+              "areaName": "Egmore",
+              "costForTwo": "₹300 for two",
+              "cuisines": ["Indian", "Chinese"],
+              "avgRating": 4,
+              "parentId": "17529",
+              "avgRatingString": "4.0",
+              "totalRatingsString": "10K+",
+              "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 2.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "23 mins",
+                "lastMileTravelString": "2.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:30:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "30% OFF",
+                "discountTag": "FLAT DEAL"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=101631&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "132818",
+              "name": "Basheer bai briyani",
+              "cloudinaryImageId": "lqpurelnalyatjyj6nug",
+              "locality": "Egmore",
+              "areaName": "Egmore",
+              "costForTwo": "₹200 for two",
+              "cuisines": ["South Indian", "Indian", "Biryani"],
+              "avgRating": 4,
+              "parentId": "42159",
+              "avgRatingString": "4.0",
+              "totalRatingsString": "1K+",
+              "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 2.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "34 mins",
+                "lastMileTravelString": "2.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:59:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO ₹80"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=132818&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "431370",
+              "name": "NxtDoor",
+              "cloudinaryImageId": "l81gdppbmht82maahsrw",
+              "locality": "Perumalpet",
+              "areaName": "Purasawalkam",
+              "costForTwo": "₹200 for two",
+              "cuisines": ["Chinese", "Indian", "Beverages"],
+              "avgRating": 4.3,
+              "veg": true,
+              "parentId": "260108",
+              "avgRatingString": "4.3",
+              "totalRatingsString": "1K+",
+              "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 2.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "2.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-28 03:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                    "description": "pureveg"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "v1695133679/badges/Pure_Veg111.png",
+                          "description": "pureveg"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹999",
+                "discountTag": "FLAT DEAL"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=431370&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "183253",
+              "name": "Riyas Biriyani",
+              "cloudinaryImageId": "f6irigpe4wpphfywsvbz",
+              "locality": "T.nagar",
+              "areaName": "Purasavakkam",
+              "costForTwo": "₹300 for two",
+              "cuisines": ["Indian"],
+              "avgRating": 4.1,
+              "parentId": "169908",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "1K+",
+              "sla": {
+                "deliveryTime": 18,
+                "lastMileTravel": 2.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "18 mins",
+                "lastMileTravelString": "2.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:59:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "aggregatedDiscountInfoV2": {},
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textExtendedBadges": {},
+                  "textBased": {},
+                  "imageBased": {}
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=183253&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "160090",
+              "name": "Ambaram fast food",
+              "cloudinaryImageId": "cmu5kdgvkg4erbcw6ipi",
+              "locality": "Basha shaib street, Pudupet",
+              "areaName": "Egmore",
+              "costForTwo": "₹200 for two",
+              "cuisines": ["South Indian"],
+              "avgRating": 3.8,
+              "parentId": "31164",
+              "avgRatingString": "3.8",
+              "totalRatingsString": "100+",
+              "sla": {
+                "deliveryTime": 22,
+                "lastMileTravel": 2.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "22 mins",
+                "lastMileTravelString": "2.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:30:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO ₹80"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=160090&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "46460",
+              "name": "Rizwan Biriyani and Kabab center",
+              "cloudinaryImageId": "fumn27n7oxp8mwe1rnqx",
+              "locality": "Royapettah",
+              "areaName": "Royapettah",
+              "costForTwo": "₹300 for two",
+              "cuisines": ["Biryani", "Kebabs"],
+              "avgRating": 4.1,
+              "parentId": "169947",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "1K+",
+              "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 3.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25 mins",
+                "lastMileTravelString": "3.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-28 00:00:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "aggregatedDiscountInfoV2": {},
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=46460&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "434037",
+              "name": "The New Box",
+              "cloudinaryImageId": "vveyluk2ioxy7dnzu2sx",
+              "locality": "Purasawalkam",
+              "areaName": "Purasavakkam",
+              "costForTwo": "₹300 for two",
+              "cuisines": ["Chinese", "Indian"],
+              "avgRating": 4.1,
+              "veg": true,
+              "parentId": "211856",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "100+",
+              "sla": {
+                "deliveryTime": 26,
+                "lastMileTravel": 2.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "26 mins",
+                "lastMileTravelString": "2.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2024-01-27 23:59:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                    "description": "pureveg"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "v1695133679/badges/Pure_Veg111.png",
+                          "description": "pureveg"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "35% OFF",
+                "discountTag": "FLAT DEAL"
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=434037&source=collection&query=Chinese",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget"
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true,
+    "nextFetch": 3
+  },
+  "tid": "c46e5cc2-0b53-44d3-b354-5e2b021dda52",
+  "sid": "btz05d32-8f58-4f9f-b143-6032eff3654a",
+  "deviceId": "2bae945e-b9ec-a6c6-e18f-546f66f36ad5",
+  "csrfToken": "VU4a29CKDXxE-ZO9eQygvUkY4u8Xsiw5d5Vt9TtA"
+}

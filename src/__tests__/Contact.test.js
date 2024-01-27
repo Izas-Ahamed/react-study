@@ -14,7 +14,7 @@ test("Should load contact us component", () => {
 test("Should load button inside component", () => {
   render(<Contact />);
 
-  const button = screen.getByRole("button");
+  const button = screen.getByText("Submit");
 
   //Assertion
   expect(button).toBeInTheDocument();

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Header from "../components/Header";
 import appStore from "../utils/appStore";
 import { BrowserRouter } from "react-router-dom";
@@ -36,4 +36,24 @@ it("Should render header component and contain cart link", () => {
   const cartText = screen.getByText(/Cart/);
 
   expect(cartText).toBeInTheDocument();
+});
+
+it("Should change login button text to logout while clicking in header component ", () => {
+  render(
+    //without this <Link/> error thrown
+    <BrowserRouter>
+      {/*without this redux error throwm*/}
+      <Provider store={appStore}>
+        <Header />
+      </Provider>
+    </BrowserRouter>
+  );
+
+  const loginButton = screen.getByRole("button", { name: "Login" });
+  //FireEvent
+  fireEvent.click(loginButton);
+
+  const logoutButton = screen.getByRole("button", { name: "Logout" });
+
+  expect(logoutButton).toBeInTheDocument();
 });

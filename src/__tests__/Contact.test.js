@@ -4,6 +4,12 @@ import "@testing-library/jest-dom";
 
 //grouping test by describe
 describe("Contact us pages tests", () => {
+  beforeAll(() => console.log("Before All"));
+  beforeEach(() => console.log("Before Each"));
+
+  afterAll(() => console.log("After All"));
+  afterEach(() => console.log("After Each"));
+
   it("Should load contact us component", () => {
     render(<Contact />);
 

@@ -37,3 +37,26 @@ it("should search biriyani text input the body component", async () => {
 
   expect(cardsAfterSearch.length).toBe(3);
 });
+
+it("should filter top rated restaurant the body component", async () => {
+  await act(async () => {
+    render(
+      <BrowserRouter>
+        <Body />
+      </BrowserRouter>
+    );
+  });
+
+  const filterBtn = screen.getByRole("button", {
+    name: "Top Rated Restaurants",
+  });
+
+  const cardsBeforeFilter = screen.getAllByTestId("resCard");
+  expect(cardsBeforeFilter.length).toBe(13);
+
+  fireEvent.click(filterBtn);
+
+  const cardsAfterFilter = screen.getAllByTestId("resCard");
+
+  expect(cardsAfterFilter.length).toBe(9);
+});

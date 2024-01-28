@@ -65,7 +65,7 @@ const Body = () => {
             setFilteredRestaurant(filteredData);
           }}
         >
-          Top Rated Restaurant
+          Top Rated Restaurants
         </button>
         <div>
           <label>Username: </label>

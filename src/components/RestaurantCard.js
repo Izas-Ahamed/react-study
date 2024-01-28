@@ -4,7 +4,10 @@ const RestaurantCard = ({ resData }) => {
   const { name, cuisines, avgRating, cloudinaryImageId, costForTwo, sla } =
     resData?.info;
   return (
-    <div className="w-[200px] h-[450px] bg-gray-200 p-2 m-2 rounded-lg hover:bg-gray-300">
+    <div
+      className="w-[200px] h-[450px] bg-gray-200 p-2 m-2 rounded-lg hover:bg-gray-300"
+      data-testid="resCard"
+    >
       <img
         className="rounded-lg h-44 w-full"
         alt="card-img"

@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     //media query
-    <div className="bg-gray-400 lg:bg-pink-100 md:bg-blue-100 sm:bg-yellow-100">
+    <div className="bg-gray-400 lg:bg-blue-100 md:bg-pink-100 sm:bg-yellow-100">
       <nav className="flex justify-between p-5 shadow-md">
         <div>
           <img className=" w-16 shadow-md" alt="logo" src={LOGO_URL}></img>
